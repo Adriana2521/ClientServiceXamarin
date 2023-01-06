@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientServiceXamarin.MainPage">
+
+    <StackLayout Margin="10">
+
+        <Label>Encuesta de Servicio al cliente</Label>
+        <Label>¿Como persive la higiene en la preparacion de los productos?</Label>
+        <Button Text="{Binding preguntas.opcion1}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+        <Button Text="{Binding preguntas.opcion2}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+        <Label>¿El menu presenta suficiente variedad de productos?</Label>
+        <Button Text="{Binding preguntas.opcion3}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+        <Button Text="{Binding preguntas.opcion4}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+        <Label>¿El precio parece accesible?</Label>
+        <Button Text="{Binding preguntas.opcion3}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+        <Button Text="{Binding preguntas.opcion4}" Command="{Binding VotacionCommand}" CommandParameter=""></Button>
+    </StackLayout>
+
+</ContentPage>

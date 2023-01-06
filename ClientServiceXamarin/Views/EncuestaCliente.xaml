@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ClientServiceXamarin.ViewModels"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="ClientServiceXamarin.Views.EncuestaCliente">
+
+
+
+    <ContentPage.BindingContext>
+        <vm:VotacionViewModel></vm:VotacionViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <Style TargetType="Label" x:Key="Preguntas">
+            <Setter Property="TextColor" Value="WhiteSmoke"></Setter>
+            <Setter Property="FontFamily" Value="Type Machine"></Setter>
+            <Setter Property="FontSize" Value="12"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="botones">
+            <Setter Property="CornerRadius" Value="40"></Setter>
+            <Setter Property="BackgroundColor" Value="#009d71"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+        </Style>
+    </ContentPage.Resources>
+
+   
+    
+
+    <StackLayout >
+        <StackLayout.Resources>
+            <Style TargetType="Button" >
+                <Style.Triggers>
+                    <DataTrigger TargetType="Button" Binding="{Binding Votacion}" >
+                        <Setter Property="IsEnabled" Value="False"></Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+
+        </StackLayout.Resources>
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="DarkOliveGreen" Offset="0.2"></GradientStop>
+                <GradientStop Color="Black" Offset="1.7"></GradientStop>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+
+        <Frame Margin="10,30,0,30" HeightRequest="80" BackgroundColor="Pink" HasShadow="False">
+            <Grid Margin="-20,-20,-20,-21" BackgroundColor="DarkOliveGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0"  Source="starbucks.png" Margin="-70,0,0,0" ></Image>
+                <Label Grid.Column="1" 
+                       Margin="-60,70,0,0"
+                       CharacterSpacing="2"
+                       TextColor="WhiteSmoke"
+                       TextDecorations="None"
+                       FontSize="15"
+                       FontFamily="Type Machine">Encuesta Servicio al Cliente </Label>
+                
+            </Grid>
+        </Frame>
+
+        <Frame HeightRequest="550" >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop></GradientStop>
+                    <GradientStop></GradientStop> 
+                    </LinearGradientBrush>
+            </Frame.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition ></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                       Style="{StaticResource Preguntas}"
+                       Margin="5,20,0,0">¿Como encuentra la higiene en la preparacion de los productos?</Label>
+                <Button Text="{Binding preguntas.opcion1}" Command="{Binding VotacionCommand}" Grid.Row="1"
+                       Style="{StaticResource botones}"             >
+                    <Button.CommandParameter>
+                        <sys:Int32>1</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="1" Source="feliz.png" Margin="10,10,120,0"></Image>
+                <Button Text="{Binding preguntas.opcion2}" Command="{Binding VotacionCommand}" Grid.Row="2" Style="{StaticResource botones}">
+                    <Button.CommandParameter>
+                        <sys:Int32>2</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="2" Source="triste.png" Margin="10,10,120,0"  ></Image>
+                
+                
+                <Label Grid.Row="3"  Margin="5,10,0,0"  Style="{StaticResource Preguntas}">¿El menu presenta suficiente variedad de productos?</Label>
+                <Button Text="{Binding preguntas.opcion3}" Command="{Binding VotacionCommand}" Grid.Row="4" Style="{StaticResource botones}">
+                    <Button.CommandParameter>
+                        <sys:Int32>3</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="4" Source="feliz.png"  Margin="10,10,120,0"  ></Image>
+                <Button Text="{Binding preguntas.opcion4}" Command="{Binding VotacionCommand}" Grid.Row="5" Style="{StaticResource botones}">
+                    <Button.CommandParameter>
+                        <sys:Int32>4</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="5" Source="triste.png" Margin="10,10,120,0"  ></Image>
+
+                <Label Grid.Row="6" Margin="5,20,0,0" Style="{StaticResource Preguntas}">¿El precio parece accesible?</Label>
+                <Button Text="{Binding preguntas.opcion5}" Command="{Binding VotacionCommand}" Grid.Row="7" Style="{StaticResource botones}">
+                    <Button.CommandParameter>
+                        <sys:Int32>5</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="7" Source="feliz.png" Margin="10,10,120,0"></Image>
+                <Button Text="{Binding preguntas.opcion6}" Command="{Binding VotacionCommand}" Grid.Row="8" Style="{StaticResource botones}">
+                    <Button.CommandParameter>
+                        <sys:Int32>6</sys:Int32>
+                    </Button.CommandParameter>
+                </Button>
+                <Image Grid.Column="1" Grid.Row="8" Source="triste.png" Margin="10,10,120,0"></Image>
+
+                <Label Grid.Row="9" Text="{Binding error}" TextColor="Red" Margin="15"></Label>
+
+
+
+            </Grid>
+          
+             
+            
+        </Frame>
+       
+
+    </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ContentPage>

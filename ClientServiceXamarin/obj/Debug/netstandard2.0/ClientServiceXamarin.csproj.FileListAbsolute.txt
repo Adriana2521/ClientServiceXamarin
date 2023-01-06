@@ -1,0 +1,17 @@
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\bin\Debug\netstandard2.0\ClientServiceXamarin.deps.json
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\bin\Debug\netstandard2.0\ClientServiceXamarin.dll
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\bin\Debug\netstandard2.0\ClientServiceXamarin.pdb
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.csproj.AssemblyReference.cache
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.AssemblyInfoInputs.cache
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.AssemblyInfo.cs
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.csproj.CoreCompileInputs.cache
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.dll
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\refint\ClientServiceXamarin.dll
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ClientServiceXamarin.pdb
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\ref\ClientServiceXamarin.dll
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\Views\EncuestaCliente.xaml.g.cs
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\amons\source\repos\ClientServiceXamarin\ClientServiceXamarin\ClientServiceXamarin\obj\Debug\netstandard2.0\Views\IntroduccionView.xaml.g.cs
